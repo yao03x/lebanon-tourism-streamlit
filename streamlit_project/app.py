@@ -23,6 +23,18 @@ st.header("Restaurants vs. Tourism Index")
 fig2 = px.scatter(final_df, x="Total number of restaurants", y="Tourism Index", hover_name="Town", title="Restaurants vs. Tourism Index")
 st.plotly_chart(fig2, use_container_width=True)
 st.header("Design Justifications")
+
+st.subheader("1. Tourism Index Range Slider")
+
+st.write("""
+The Tourism Index range slider helps users answer the question: "Which towns fall within a specific level of tourism activity?" A range slider was chosen instead of a dropdown because the Tourism Index is numerical and users may want to select several consecutive values at once rather than one value at a time. This design supports the course concepts of reducing clutter and focusing attention because the dashboard displays only towns that fall within the selected Tourism Index range.
+""")
+
+st.subheader("2. Town Multiselect")
+
+st.write("""
+The town multiselect helps users answer the question: "How do specific towns compare within the selected Tourism Index range?" A multiselect was chosen instead of a single-selection dropdown because users can select and compare several towns at the same time. It is also linked to the Tourism Index slider, so the available towns depend on the selected range. This supports the course concepts of providing context, reducing clutter, and focusing attention by allowing users to concentrate only on the towns relevant to their analysis.
+""")
 st.subheader("1. Tourism Index Range Slider")
 st.write("The Tourism Index slider helps users answer which towns fall within a specific level of tourism activity. A range slider was chosen because the Tourism Index is numerical and users can easily select a range of values instead of entering numbers manually. This interaction reduces clutter and focuses attention by displaying only the towns that are relevant to the selected tourism range.")
 st.subheader("2. Town Multiselect")
