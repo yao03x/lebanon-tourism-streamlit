@@ -35,7 +35,4 @@ st.subheader("2. Town Multiselect")
 st.write("""
 The town multiselect helps users answer the question: "How do specific towns compare within the selected Tourism Index range?" A multiselect was chosen instead of a single-selection dropdown because users can select and compare several towns at the same time. It is also linked to the Tourism Index slider, so the available towns depend on the selected range. This supports the course concepts of providing context, reducing clutter, and focusing attention by allowing users to concentrate only on the towns relevant to their analysis.
 """)
-st.subheader("1. Tourism Index Range Slider")
-st.write("The Tourism Index slider helps users answer which towns fall within a specific level of tourism activity. A range slider was chosen because the Tourism Index is numerical and users can easily select a range of values instead of entering numbers manually. This interaction reduces clutter and focuses attention by displaying only the towns that are relevant to the selected tourism range.")
-st.subheader("2. Town Multiselect")
-st.write("The town multiselect helps users answer how specific towns compare after choosing a Tourism Index range. A multiselect was chosen instead of a single dropdown because users can compare several towns at the same time. It is linked to the Tourism Index slider because the available town options depend on the selected range. This supports drill-down analysis, reduces clutter, and focuses attention on relevant towns.")
+
