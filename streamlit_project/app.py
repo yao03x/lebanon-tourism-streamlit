@@ -4,7 +4,8 @@ import plotly.express as px
 st.set_page_config(page_title="Lebanon Tourism Explorer", layout="wide")
 st.title("Lebanon Tourism Explorer")
 st.write("Explore tourism activity across Lebanese towns using interactive visualizations.")
-df = pd.read_csv("tourism_data.csv")
+from pathlib import Path
+df = pd.read_csv(Path(__file__).parent / "tourism_data.csv")
 st.subheader("Dataset Preview")
 st.dataframe(df.head())
 st.sidebar.header("Filters")
